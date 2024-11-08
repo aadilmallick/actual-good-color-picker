@@ -1,12 +1,10 @@
 import { MessagesOneWay } from "../../chrome-api/messages";
 
-export const blockChannel = new MessagesOneWay<{
-  url: string;
-}>("block");
+export const openEyedropperChannel = new MessagesOneWay("open-eyedropper");
 
-export const focusModeChannel = new MessagesOneWay<{
-  url: string;
-}>("focus");
+export const storeColorChannel = new MessagesOneWay<{
+  color: string;
+}>("store-color");
 
 // define static methods here
 export class MessageHandler {}
