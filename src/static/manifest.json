@@ -10,19 +10,12 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "React Extension",
+    "default_title": "Open Color Picker",
     "default_icon": "icon.png"
   },
   "permissions": ["storage"],
-  "options_page": "options.html",
   "background": {
     "service_worker": "background.js",
     "type": "module"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
-    }
-  ]
+  }
 }

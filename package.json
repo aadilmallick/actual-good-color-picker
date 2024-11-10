@@ -1,7 +1,7 @@
 {
-  "name": "react-chrome-extension",
+  "name": "simple-color-picker",
   "version": "1.0.0",
-  "description": "react chrome extension template",
+  "description": "Simple color picker",
   "scripts": {
     "start": "webpack --watch --progress --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js"

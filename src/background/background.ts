@@ -1,5 +1,4 @@
 import { Runtime } from "../chrome-api/runtime";
-import { storeColorChannel } from "./controllers/messages";
 import { appStorage } from "./controllers/storage";
 
 Runtime.onInstall({
@@ -8,8 +7,4 @@ Runtime.onInstall({
     await appStorage.setup();
     console.log(await appStorage.getAll());
   },
-});
-
-storeColorChannel.listen(({ color }) => {
-  console.log("Color received", color);
 });

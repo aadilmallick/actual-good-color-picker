@@ -5,7 +5,7 @@ const ColorList = () => {
   const { colors, loading } = useColorStore();
   if (loading) return null;
   return (
-    <div className="px-1 pt-2 mt-4 pb-4 overflow-y-auto max-h-64">
+    <div className="px-1 pt-2 mt-4 pb-4 overflow-y-auto max-h-96">
       {colors?.map((color) => (
         <ColorItem color={color} key={color} />
       ))}
